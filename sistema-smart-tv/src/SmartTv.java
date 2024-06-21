@@ -1,6 +1,12 @@
+/*
+ *  @authot Eugenio Socha
+ * @since 15/06/2024
+ */
+
+
 public class SmartTv{
     boolean ligada = false;
-    int canal = 1;
+    protected int canal = 1;
     int volume = 25;
 
     public void aumentarCanal(){
@@ -12,7 +18,9 @@ public class SmartTv{
     }
 
     public void novoCanal(int novoCanal){
+        int sintonia = 0;
         canal = novoCanal;
+        sintonia++;
     }
 
     public void aumentarVolume(){
